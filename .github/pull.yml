@@ -1,0 +1,12 @@
+---
+version: "1"
+rules:
+  - base: master
+    upstream: folio-org:master
+    mergeMethod: hardreset
+  - base: snapshot
+    upstream: folio-org:snapshot
+    mergeMethod: hardreset
+  - base: q1-2020
+    upstream: folio-org:q1-2020
+    mergeMethod: hardreset

@@ -5,6 +5,12 @@ Copyright (C) 2015-2019 The Open Library Foundation
 This software is distributed under the terms of the Apache License,
 Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 
+## Important note
+
+**This branch of id-platform-complete is used only for Index Data-specific documentation and configuration. It does not track any upstream branch and should not be used to build a FOLIO system**
+
+See [README-indexdata.md](README-indexdata.md) for more details.
+
 ## Introduction
 
 This is the "complete" Stripes "platform". It consists simply of an
