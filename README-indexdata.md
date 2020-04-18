@@ -22,35 +22,45 @@ This process is unfortunately a little convoluted.
 
 1. Clone the `id-platform-complete` repository to a local repo
 
-    git clone git@github.com:indexdata/id-platform-complete.git && cd id-platform-complete
+```
+git clone git@github.com:indexdata/id-platform-complete.git && cd id-platform-complete
+```
 
 2. Add the upstream repository as a remote to your local repo and fetch branches
 
-    git remote add upstream https://github.com/folio-org/platform-complete; git fetch upstream
+```
+git remote add upstream https://github.com/folio-org/platform-complete; git fetch upstream
+```
 
 3. Check out the new branch
 
-    git checkout q2-2020
+```
+git checkout q2-2020
+```
 
 4. Push the new branch to the source repository
 
-    git push origin q2-2020
+```
+git push origin q2-2020
+```
 
 5. Check out the `indexdata` branch
 
-    git checkout indexdata
+```
+git checkout indexdata
+```
 
 6. Update the pull configuration file `.github/pull.yml` to track the new branch. Add something like this to the `rules` array:
 
 ```
   - base: q2-2020
     upstream: folio-org:q2-2020
-    mergeMethod: hardreset
+    mergeMethod: hardreset # using the "none" mergeMethod will leave the PR open with no automatic merge
 ```
-
-Note that using the `none` mergeMethod will leave the PR open with no automatic merge.
 
 7. Commit the change to the `indexdata` branch and push back to Github
 
-    git commit -a -m "Add tracking for q2-2020 branch of upstream"
-    git push
+```
+git commit -a -m "Add tracking for q2-2020 branch of upstream"
+git push
+```
