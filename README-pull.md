@@ -7,3 +7,5 @@ Here is a change to force an update.
 Here's another change.
 
 Testing reviewers.
+
+Testing "none" merge method.
