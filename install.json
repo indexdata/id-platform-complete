@@ -74,7 +74,7 @@
   "id" : "mod-feesfines-15.7.3",
   "action" : "enable"
 }, {
-  "id" : "mod-circulation-18.0.11",
+  "id" : "mod-circulation-18.0.12",
   "action" : "enable"
 }, {
   "id" : "folio_checkin-2.0.1",
