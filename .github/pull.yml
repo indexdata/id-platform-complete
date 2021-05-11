@@ -16,3 +16,6 @@ rules:
   - base: q3-2020
     upstream: folio-org:q3-2020
     mergeMethod: hardreset
+  - base: R1-2021
+    upstream: folio-org:R1-2021
+    mergeMethod: hardreset
